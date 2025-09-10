@@ -8,7 +8,7 @@
       <p>Get it done today</p>
       
         <!-- add HTML code here -->
-         <input id ='userInput' type ='text' placeholder="enter item">
+         <input id ='userinput' type ='text' placeholder="enter item">
          <button id="enter" onclick = "addListAfterClick()">Enter</button>
 
 
@@ -28,7 +28,7 @@
         function addListAfterClick(){
          var ul =document.getElementsByTagName("ul")[0];
          var li = document.createElement("li");
-         var input =document.getElementById("userInput");
+         var input =document.getElementById("userinput");
          if (input.value.length >0){
             var textnode = document.createTextNode(input.value); //Candy
             li.appendChild(textNode); // <li>Candy</li>
